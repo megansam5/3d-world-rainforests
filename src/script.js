@@ -33,7 +33,7 @@ scene.add(ambientLight, directionalLight);
 
 // Earth sphere
 const textureLoader = new THREE.TextureLoader();
-const earthTexture = textureLoader.load("assets/earth.jpg");
+const earthTexture = textureLoader.load("assets/earthmap1k.jpg");
 const earthGeometry = new THREE.SphereGeometry(1, 64, 64);
 const earthMaterial = new THREE.MeshPhongMaterial({ map: earthTexture });
 const earthMesh = new THREE.Mesh(earthGeometry, earthMaterial);
@@ -295,7 +295,7 @@ loader.load(
 
     // Intro Info
     const introGeometry = new TextGeometry(
-      "Rainforests are vital ecosystems that\nregulate climate, host immense biodiversity,\nand support human life.\nHover over the rainforests around\nthe world to see more information.",
+      "Rainforests are vital ecosystems\nthat regulate climate, host immense\nbiodiversity, and support human life.\nHover over the rainforests around\nthe world to see more information.",
       {
         font: font,
         size: 0.07,
@@ -304,7 +304,7 @@ loader.load(
     );
     const introMaterial = new THREE.MeshBasicMaterial({ color: 0xffffff });
     introMesh = new THREE.Mesh(introGeometry, introMaterial);
-    introMesh.position.set(1.2, 1, 0);
+    introMesh.position.set(1, 1.1, 0);
     scene.add(introMesh);
   }
 );
@@ -360,8 +360,8 @@ let autoRotate = true;
 const toggleBtn = document.createElement("button");
 toggleBtn.textContent = "Stop Rotation";
 toggleBtn.style.position = "absolute";
-toggleBtn.style.bottom = "20px";
-toggleBtn.style.left = "20px";
+toggleBtn.style.bottom = "40px";
+toggleBtn.style.left = "40px";
 toggleBtn.style.padding = "8px 12px";
 toggleBtn.style.border = "none";
 toggleBtn.style.borderRadius = "6px";
