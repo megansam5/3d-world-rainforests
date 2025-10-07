@@ -1,8 +1,8 @@
 # 3D Rainforests of the World
 
-This is a fun little project using a 3D interaction visual to lookj at different rainforests of the world.
+A small interactive 3D experience built with [Three.js](https://threejs.org/), visualising the world's major rainforests on the globe and highlighting their importance to our planet.
 
-This was done using (https://threejs.org/)!
+Facts were sourced from [earth.org](https://earth.org/world-rainforest-day-worlds-great-rainforests/)!
 
 ### Prerequisites
 
